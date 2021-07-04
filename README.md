@@ -1,5 +1,7 @@
 # mdi-font-build-subset
 
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+
 ## Synopsis
 
 Dev helper package to build a reduced version of the [Material Design Icons](https://materialdesignicons.com/) webfont:
@@ -21,11 +23,10 @@ Dev helper package to build a reduced version of the [Material Design Icons](htt
 1. Accessing the icons in the reduced webfont is the same as with the full mdi font.
 
 ## Notes
-* The `./bin/index.js` is an adapted version of the original `@mdi/font-build` package.
 * The package is basically a clone of the original `@mdi/font-build` package. 2 files have been slightly adapted:
   * `./bin/index.js`
   * `./src/scss/_path.scss`
 * In addition to `./dist`, the build also creates an `./icon` folder that contains the specified icon svg files. You can safely delete that folder after a successful build.
 
 ## Credits
-Full credits go to the creator and contributors of the [@mdi/font-build](https://www.npmjs.com/package/@mdi/font-build) package. My additions make it worse.
+Full credits go to the creators and contributors of the [@mdi/font-build](https://www.npmjs.com/package/@mdi/font-build) package, released under the MIT license. My additions make it worse.
