@@ -1,0 +1,7 @@
+@font-face {
+  font-family: '#{$prefix-font-name}';
+  src: url('#{$prefix-font-path}/#{$prefix-filename}-webfont.woff2?v=#{$prefix-version}') format('woff2'),
+    url('#{$prefix-font-path}/#{$prefix-filename}-webfont.woff?v=#{$prefix-version}') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

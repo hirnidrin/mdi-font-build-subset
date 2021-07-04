@@ -1,0 +1,65 @@
+$prefix-sizes: 18 24 36 48;
+@each $prefix-size in $prefix-sizes {
+    .#{$prefix-css-prefix}-#{$prefix-size}px {
+        &.#{$prefix-css-prefix}-set,
+        &.#{$prefix-css-prefix}:before {
+            font-size: $prefix-size * 1px;
+        }
+    }
+}
+
+.#{$prefix-css-prefix}-dark {
+    &:before {
+        color: rgba(0, 0, 0, 0.54);
+    }
+    &.#{$prefix-css-prefix}-inactive:before {
+        color: rgba(0, 0, 0, 0.26);
+    }
+}
+.#{$prefix-css-prefix}-light {
+    &:before {
+        color: rgba(255, 255, 255, 1);
+    }
+    &.#{$prefix-css-prefix}-inactive:before {
+        color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+$prefix-degrees: 45 90 135 180 225 270 315;
+@each $prefix-degree in $prefix-degrees {
+    .#{$prefix-css-prefix}-rotate-#{$prefix-degree}{
+        &:before {
+            -webkit-transform: rotate(#{$prefix-degree}deg);
+            -ms-transform: rotate(#{$prefix-degree}deg);
+            transform: rotate(#{$prefix-degree}deg);
+        }
+        /*
+        // Not included in production
+        &.#{$prefix-css-prefix}-flip-h:before {
+            -webkit-transform: scaleX(-1) rotate(#{$prefix-degree}deg);
+            transform: scaleX(-1) rotate(#{$prefix-degree}deg);
+            filter: FlipH;
+            -ms-filter: "FlipH";
+        }
+        &.#{$prefix-css-prefix}-flip-v:before {
+            -webkit-transform: scaleY(-1) rotate(#{$prefix-degree}deg);
+            -ms-transform: rotate(#{$prefix-degree}deg);
+            transform: scaleY(-1) rotate(#{$prefix-degree}deg);
+            filter: FlipV;
+            -ms-filter: "FlipV";
+        }
+        */
+    }
+}
+.#{$prefix-css-prefix}-flip-h:before {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+.#{$prefix-css-prefix}-flip-v:before {
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+}

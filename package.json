@@ -1,0 +1,23 @@
+{
+  "name": "mdi-font-build-subset",
+  "version": "1.0.0",
+  "description": "Build a reduced version of the Material Design Icons webfont.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hirnidrin/mdi-font-build-subset.git"
+  },
+  "author": "hirnidrin",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/hirnidrin/mdi-font-build-subset/issues"
+  },
+  "homepage": "https://github.com/hirnidrin/mdi-font-build-subset#readme",
+  "scripts": {
+    "build": "node ./bin/index.js"
+  },
+  "devDependencies": {
+    "@mdi/font-build": "^1.7.0",
+    "@mdi/svg": "^5.9.55",
+    "standard": "^16.0.3"
+  }
+}
